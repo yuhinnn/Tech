@@ -1,8 +1,12 @@
 Rails.application.routes.draw do
-  get '/new' =>'notes#new'
 
- get '/top' =>'home#top'
- get '/about' =>'home#about'
+  get '/new' =>'notes#new'
+  get '/about' =>'home#about'
+  get '/notes' =>'notes#index'
+  post'/notes'=>'notes#create'
+  get '/notes/:id' =>'notes#show',as:'note'
+  get '/notes/:id/edit' =>'notes#edit',as:'edit_note'
+  root  'home#top'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

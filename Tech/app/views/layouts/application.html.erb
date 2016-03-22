@@ -10,15 +10,16 @@
   <header>
     <div class="head-container">
     <div class="header-left">
-    <h1>Tech Fellow</h1>
+    <h1><%= link_to "Tech Fellow",root_path%></h1>
     </div>
     <div class="header-right">
-      <ul>
-        <a href="#"><li>top</li></a>
-        <a href="#"><li>about</li></a>
-        <a href="#"><li>create</li></a>
-        <a href="#"><li>login</li></a>
-      </ul>
+    <ul>
+     <li><%= link_to "Top",root_path%></li>
+     <li><%= link_to "About",about_path%></li>
+     <li><%= link_to "create",new_path%></li>
+     <li><%= link_to "Login","#"%></li>
+     <li><%= link_to "Index",notes_path%></li>
+   </ul>
     </div>
     </div>
   </header>
@@ -30,14 +31,15 @@
 
 <footer>
 <div class="fotter-left">
-<a href="#">Tech Fellow</a>
+<%= link_to "Tech Fellow",root_path%>
 </div>
 
 <div class="fotter-right">
-<a href="#">top</a>
-<a href="#">about</a>
-<a href="#">create</a>
-<a href="#">login</a>
+  <%= link_to "Top",root_path%>
+  <%= link_to "About",about_path%>
+  <%= link_to "create",new_path%>
+  <%= link_to "Login","#"%>
+  <%= link_to "Index",notes_path%>
 </div>
 
 </footer>

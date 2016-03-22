@@ -1,8 +1,14 @@
 body{
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
+  color: #1f89e2;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1b7ccd;
 }
 .top-container{
   width:1170px;
@@ -66,12 +72,17 @@ header{
   padding-top: 10px;
 }
 .header-right li{
-  color: white;
   list-style-type: none;
   float: left;
   margin: 0 20px;
 }
 
+.header-right a{
+  color:white;
+}
+.header-left a{
+  color:white;
+}
 footer{
   border-top:1px solid #777777;
   margin-top:70px;
@@ -85,4 +96,12 @@ footer{
 .fotter-right{
   float:right;
   margin-right:30px;
+}
+
+.fotter-right a{
+  color:black;
+}
+
+.fotter-left a {
+  color:black;
 }
