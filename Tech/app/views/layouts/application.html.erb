@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-  <title>Tech</title>
+  <title>Tech Fellow</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div class="head-container">
+    <div class="header-left">
+    <h1>Tech Fellow</h1>
+    </div>
+    <div class="header-right">
+      <ul>
+        <a href="#"><li>top</li></a>
+        <a href="#"><li>about</li></a>
+        <a href="#"><li>create</li></a>
+        <a href="#"><li>login</li></a>
+      </ul>
+    </div>
+    </div>
+  </header>
+
+
+
 
 <%= yield %>
+
+<footer>
+<div class="fotter-left">
+<a href="#">Tech Fellow</a>
+</div>
+
+<div class="fotter-right">
+<a href="#">top</a>
+<a href="#">about</a>
+<a href="#">create</a>
+<a href="#">login</a>
+</div>
+
+</footer>
 
 </body>
 </html>

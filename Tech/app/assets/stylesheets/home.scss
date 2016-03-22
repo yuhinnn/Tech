@@ -1,0 +1,88 @@
+body{
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+.top-container{
+  width:1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  color: white;
+}
+
+.top-wrapper{
+  background-image: url(tree.jpg);
+  background-size:cover;
+  padding: 180px 0 300px 0;
+}
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+}
+
+.sinki{
+  background-color: #239b76;
+}
+
+.facebook{
+  background-color: #3b5998;
+}
+
+.twitter{
+  background-color: #55acee;
+}
+
+.btn{
+ color: white;
+ opacity:0.8;
+ padding:10px 50px;
+
+}
+.btn:hover{
+  opacity:1;
+}
+
+header{
+  background-color:#333333;
+  width:100%;
+  height: 80px;
+  padding-bottom:0;
+}
+
+.header-left{
+  float:left ;
+  margin-left:15px;
+  color:white;
+}
+
+
+.header-right{
+  float:right;
+  margin-right: 30px;
+  padding-top: 10px;
+}
+.header-right li{
+  color: white;
+  list-style-type: none;
+  float: left;
+  margin: 0 20px;
+}
+
+footer{
+  border-top:1px solid #777777;
+  margin-top:70px;
+  padding-top:10px;
+
+}
+
+.fotter-left{
+  float: left;
+}
+.fotter-right{
+  float:right;
+  margin-right:30px;
+}
