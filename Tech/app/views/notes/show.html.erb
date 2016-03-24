@@ -4,3 +4,4 @@
 <p><%= @note.content%></p>
 
 <%= link_to "編集" ,edit_note_path(@note.id)%>
+<%= link_to "削除" ,destroy_note_path(@note.id) , method:"delete"%>
