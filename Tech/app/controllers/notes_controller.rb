@@ -1,13 +1,12 @@
 class NotesController < ApplicationController
+#リファクタリング
 before_action:set_note,only:[:show,:edit,:destroy,:update]
 
   def new
   end
 
   def create
-    @note=Note.new
-    @note.title = params[:title]
-    @note.content = params[:content]
+    @note=Note.new(note_params)
     @note.save
     redirect_to note_path(@note.id)
   end
@@ -44,6 +43,12 @@ before_action:set_note,only:[:show,:edit,:destroy,:update]
   def set_note
       @note=Note.find(params[:id])
     end
+
+#ストロングパラメータ
+  def note_params
+    params.require(:note).permit(:title,:content)
+  end
+
 
 
 end
