@@ -1,5 +1,5 @@
 <h1>投稿を編集する</h1>
-<%= form_tag update_note_path(@note.id) , method:"patch" do %>
+<%= form_tag note_path(@note.id) , method:"patch" do %>
 タイトル
 <%= text_field_tag :title,@note.title ,class:"tytle tytle-area" %>
 内容
