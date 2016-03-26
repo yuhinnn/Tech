@@ -5,9 +5,9 @@
 </div>
 <%=form_tag notes_path do %>
 タイトル
-<input type="text" name="note[title]" class="tytle tytle-area">
+<%= text_field_tag 'note[title]',@note.title ,class:"tytle tytle-area"%>
 内容
-<textarea name="note[content]" class="content content-area"></textarea>
+<%= text_area_tag name="note[content]" ,@note.content , class:"content content-area"%>
 <input type="submit" value="投稿する" >
 <%end%>
 
