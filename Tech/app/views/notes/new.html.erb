@@ -4,6 +4,17 @@
 <h1>Create</h1>
 </div>
 <%=form_tag notes_path do %>
+<%if @note.errors.any? %>
+<div class="alert">
+  <h2><%= @note.errors.count %>件のエラーがあります</h2>
+  <ul>
+    <% @note.errors.full_messages.each do |message|%>
+    <li><%= message%></li>
+  </ul>
+  <% end %>
+</div>
+
+<%end%>
 タイトル
 <%= text_field_tag 'note[title]',@note.title ,class:"tytle tytle-area"%>
 内容
