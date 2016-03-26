@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#device
+gem 'devise', '3.5.1'
+
 # console
 gem 'hirb', '0.7.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
