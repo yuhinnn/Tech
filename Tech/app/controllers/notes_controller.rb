@@ -9,7 +9,7 @@ before_action:set_note,only:[:show,:edit,:destroy,:update]
   def create
     @note=Note.new(note_params)
     if @note.save
-    redirect_to @note
+    redirect_to @note , notice:'投稿が保存されました'
     else
       render:new
     end
