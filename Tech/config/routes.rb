@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  get 'signup' => 'users#new'
+
   get '/about' =>'home#about'
   root  'home#top'
   resources:notes
