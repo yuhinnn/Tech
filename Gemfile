@@ -14,6 +14,8 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+  gem 'hirb'         # モデルの出力結果を表形式で表示するGem
+  gem 'hirb-unicode' # 日本語などマルチバイト文字の出力時の出力結果のずれに対応
 end
 
 group :production do
