@@ -31,3 +31,14 @@ bower.json
 
 # Ignore pow environment settings
 .powenv
+
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
